@@ -4,6 +4,8 @@ Important Note: This is a completely new version and is not compatible with prio
 
 CHANGELOG:
 
+V1.0.5 - Temp fix to icon retrieval issue (due to change in API). The app now caches icons upon start (please allow a few minutes for the caching to complete). I'll improve this function when I find more time...
+
 V1.0.3 - *** This update requires you to revise your existing flows - add priority and if using a sound card, specify to repeats! ***
 Added new message priority option | Added new repeat sound field
 
