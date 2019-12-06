@@ -5,11 +5,13 @@
   "category": "internet",
   "name": {
     "en": "LaMetric Time",
-    "nl": "LaMetric Time"
+    "nl": "LaMetric Time",
+    "de": "LaMetric Time"
   },
   "description": {
     "en": "Display Homey notifications on your LaMetric Time.",
-    "nl": "Toon notificaties op LaMetric Time."
+    "nl": "Toon notificaties op LaMetric Time.",
+    "de": "Zeigt Homey-Benachrichtigungen auf deiner LaMetric Time an."
   },
   "author": {
     "name": "Mark Swift",
@@ -59,7 +61,8 @@
           "type":"group",
           "label":{
             "en":"General settings",
-            "nl":"Instellingen"
+            "nl":"Instellingen",
+            "de":"Einstellungen"
           },
           "children":[
             {
@@ -68,7 +71,8 @@
               "value":"192.168.1.100",
               "label":{
                 "en":"Local IP address",
-                "nl":"Lokaal IP adres"
+                "nl":"Lokaal IP adres",
+                "de":"Lokale IP-Adresse"
               }
             }
           ]
@@ -95,7 +99,8 @@
       { "id": "alarmClockSet",
         "title": {
           "en": "Set alarm clock",
-          "nl": "Wekker instellen"
+          "nl": "Wekker instellen",
+          "de": "Wecker stellen"
         },
         "args": [
           {
@@ -107,7 +112,8 @@
             "type": "time",
             "placeholder": {
               "en": "Time",
-              "nl": "Tijd"
+              "nl": "Tijd",
+              "de": "Zeit"
             }
           },{
             "name": "radio",
@@ -117,13 +123,15 @@
                 "id": "true",
                 "label": {
                   "en": "Radio",
-                  "nl": "Radio"
+                  "nl": "Radio",
+                  "de": "Radio"
                 }
               },{
                 "id": "false",
                 "label": {
                   "en": "Buzzer",
-                  "nl": "Pieper"
+                  "nl": "Pieper",
+                  "de": "Summer"
                 }
               }
             ]
@@ -133,7 +141,8 @@
       { "id": "alarmClockUnset",
         "title": {
           "en": "Disable alarm clock",
-          "nl": "Wekker uitzetten"
+          "nl": "Wekker uitzetten",
+          "de": "Wecker deaktivieren"
         },
         "args": [
           {
@@ -146,7 +155,8 @@
       { "id": "notificationText",
         "title": {
           "en": "Notification",
-          "nl": "Notificatie"
+          "nl": "Notificatie",
+          "de": "Benachrichtigung"
         },
         "args": [
           {
@@ -157,24 +167,25 @@
             "name": "priority",
             "type": "dropdown",
             "values": [
-              { "id": "info", "label": { "en": "info", "nl": "" }},
-              { "id": "warning", "label": { "en": "warning", "nl": "" }},
-              { "id": "critical", "label": { "en": "critical", "nl": "" }}
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info" }},
+              { "id": "warning", "label": { "en": "warning", "nl": "warning", "de": "Warnung" }},
+              { "id": "critical", "label": { "en": "critical", "nl": "critical", "de": "Kritisch" }}
             ]
           },{
             "name": "icontype",
             "type": "dropdown",
             "values": [
-              { "id": "none", "label": { "en": "none", "nl": "geen" }},
-              { "id": "info", "label": { "en": "info", "nl": "info" }},
-              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing" }}
+              { "id": "none", "label": { "en": "none", "nl": "geen", "de": "Kein" }},
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info"  }},
+              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing", "de": "Alarm" }}
             ]
           },{
             "name": "text",
             "type": "text",
             "placeholder": {
               "en": "Text",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Text"
             }
           }
         ]
@@ -182,7 +193,8 @@
       { "id": "notificationTextIcon",
         "title": {
           "en": "Notification (icon)",
-          "nl": "Notificatie (icoon)"
+          "nl": "Notificatie (icoon)",
+          "de": "Benachrichtigung (Icon)"
         },
         "args": [
           {
@@ -193,30 +205,31 @@
             "name": "priority",
             "type": "dropdown",
             "values": [
-              { "id": "info", "label": { "en": "info", "nl": "" }},
-              { "id": "warning", "label": { "en": "warning", "nl": "" }},
-              { "id": "critical", "label": { "en": "critical", "nl": "" }}
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info" }},
+              { "id": "warning", "label": { "en": "warning", "nl": "warning", "de": "Warnung" }},
+              { "id": "critical", "label": { "en": "critical", "nl": "critical", "de": "Kritisch" }}
             ]
           },{
             "name": "icontype",
             "type": "dropdown",
             "values": [
-              { "id": "none", "label": { "en": "none", "nl": "geen" }},
-              { "id": "info", "label": { "en": "info", "nl": "info" }},
-              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing" }}
+              { "id": "none", "label": { "en": "none", "nl": "geen", "de": "Kein" }},
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info"  }},
+              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing", "de": "Alarm" }}
             ]
           },{
             "name": "text",
             "type": "text",
             "placeholder": {
               "en": "Text",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Text"
             }
           },{
             "name": "icon",
             "type": "autocomplete",
             "placeholder": {
-              "en": "Homey"
+              "en": "Icon"
             }
           }
         ]
@@ -224,7 +237,8 @@
       { "id": "notificationTextIconSound",
         "title": {
           "en": "Notification (icon and sound)",
-          "nl": "Notificatie (icoon en geluid)"
+          "nl": "Notificatie (icoon en geluid)",
+          "de": "Benachrichtigung (Icon und Ton)"
         },
         "args": [
           {
@@ -235,44 +249,47 @@
             "name": "priority",
             "type": "dropdown",
             "values": [
-              { "id": "info", "label": { "en": "info", "nl": "" }},
-              { "id": "warning", "label": { "en": "warning", "nl": "" }},
-              { "id": "critical", "label": { "en": "critical", "nl": "" }}
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info" }},
+              { "id": "warning", "label": { "en": "warning", "nl": "warning", "de": "Warnung" }},
+              { "id": "critical", "label": { "en": "critical", "nl": "critical", "de": "Kritisch" }}
             ]
           },{
             "name": "icontype",
             "type": "dropdown",
             "values": [
-              { "id": "none", "label": { "en": "none", "nl": "geen" }},
-              { "id": "info", "label": { "en": "info", "nl": "info" }},
-              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing" }}
+              { "id": "none", "label": { "en": "none", "nl": "geen", "de": "Kein" }},
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info"  }},
+              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing", "de": "Alarm" }}
             ]
           },{
             "name": "text",
             "type": "text",
             "placeholder": {
               "en": "Text",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Text"
             }
           },{
             "name": "icon",
             "type": "autocomplete",
             "placeholder": {
-              "en": "Homey"
+              "en": "Icon"
             }
           },{
             "name": "sound",
             "type": "autocomplete",
             "placeholder": {
               "en": "Sound",
-              "nl": "Geluid"
+              "nl": "Geluid",
+              "de": "Ton"
             }
           },{
             "name": "repeatcount",
             "type": "text",
             "placeholder": {
               "en": "1-50",
-              "nl": "1-50"
+              "nl": "1-50",
+              "de": "1-50"
             }
           }
         ]
@@ -280,7 +297,8 @@
       { "id": "notificationTextSound",
         "title": {
           "en": "Notification (sound)",
-          "nl": "Notificatie (geluid)"
+          "nl": "Notificatie (geluid)",
+          "de": "Benachrichtigung (Ton)"
         },
         "args": [
           {
@@ -291,38 +309,41 @@
             "name": "priority",
             "type": "dropdown",
             "values": [
-              { "id": "info", "label": { "en": "info", "nl": "" }},
-              { "id": "warning", "label": { "en": "warning", "nl": "" }},
-              { "id": "critical", "label": { "en": "critical", "nl": "" }}
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info" }},
+              { "id": "warning", "label": { "en": "warning", "nl": "warning", "de": "Warnung" }},
+              { "id": "critical", "label": { "en": "critical", "nl": "critical", "de": "Kritisch" }}
             ]
           },{
             "name": "icontype",
             "type": "dropdown",
             "values": [
-              { "id": "none", "label": { "en": "none", "nl": "geen" }},
-              { "id": "info", "label": { "en": "info", "nl": "info" }},
-              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing" }}
+              { "id": "none", "label": { "en": "none", "nl": "geen", "de": "Kein" }},
+              { "id": "info", "label": { "en": "info", "nl": "info", "de": "Info"  }},
+              { "id": "alert", "label": { "en": "alert", "nl": "waarschuwing", "de": "Alarm" }}
             ]
           },{
             "name": "text",
             "type": "text",
             "placeholder": {
               "en": "Text",
-              "nl": "Bericht"
+              "nl": "Bericht",
+              "de": "Text"
             }
           },{
             "name": "sound",
             "type": "autocomplete",
             "placeholder": {
               "en": "Sound",
-              "nl": "Geluid"
+              "nl": "Geluid",
+              "de": "Ton"
             }
           },{
             "name": "repeatcount",
             "type": "text",
             "placeholder": {
               "en": "1-50",
-              "nl": "1-50"
+              "nl": "1-50",
+              "de": "1-50"
             }
           }
         ]
@@ -330,7 +351,8 @@
       { "id": "radioAction",
         "title": {
           "en": "Radio",
-          "nl": "Radio"
+          "nl": "Radio",
+          "de": "Radio"
         },
         "args": [
           {
@@ -345,19 +367,22 @@
                 "id": "radio.play",
                 "label": {
                   "en": "Play",
-                  "nl": "Afspelen"
+                  "nl": "Afspelen",
+                  "de": "Abspielen"
                 }
               },{
                 "id": "radio.stop",
                 "label": {
                   "en": "Stop",
-                  "nl": "Stop"
+                  "nl": "Stop",
+                  "de": "Stoppen"
                 }
               },{
                 "id": "radio.next",
                 "label": {
                   "en": "Next station",
-                  "nl": "Volgende station"
+                  "nl": "Volgende station",
+                  "de": "Nächster Sender"
                 }
               }
             ]
@@ -367,7 +392,8 @@
       { "id": "setVolume",
         "title": {
           "en": "Set volume",
-          "nl": "Instellen volume"
+          "nl": "Instellen volume",
+          "de": "Lautstärke einstellen"
         },
         "args": [
           {
@@ -388,7 +414,8 @@
       { "id": "showWidget",
         "title": {
           "en": "Show widget",
-          "nl": "Toon widget"
+          "nl": "Toon widget",
+          "de": "Widget anzeigen"
         },
         "args": [
           {
@@ -400,7 +427,8 @@
             "type": "autocomplete",
             "placeholder": {
               "en": "Select widget",
-              "nl": "Kies widget"
+              "nl": "Kies widget",
+              "de": "Widget auswählen"
             }
           }
         ]
@@ -408,7 +436,8 @@
       { "id": "showWidgetNextPrev",
         "title": {
           "en": "Change widget",
-          "nl": "Verander widget"
+          "nl": "Verander widget",
+          "de": "Widget ändern"
         },
         "args": [
           {
@@ -423,13 +452,15 @@
                 "id": "Previous",
                 "label": {
                   "en": "Previous",
-                  "nl": "Vorige"
+                  "nl": "Vorige",
+                  "de": "Vorheriges"
                 }
               },{
                 "id": "Next",
                 "label": {
                   "en": "Next",
-                  "nl": "Volgende"
+                  "nl": "Volgende",
+                  "de": "Nächstes"
                 }
               }
             ]
@@ -439,7 +470,8 @@
       { "id": "stopwatchAction",
         "title": {
           "en": "Stopwatch",
-          "nl": "Stopwatch"
+          "nl": "Stopwatch",
+          "de": "Stoppuhr"
         },
         "args": [
           {
@@ -454,19 +486,22 @@
                 "id": "stopwatch.pause",
                 "label": {
                   "en": "Pause",
-                  "nl": "Pauzeer"
+                  "nl": "Pauzeer",
+                  "de": "Pause"
                 }
               },{
                 "id": "stopwatch.reset",
                 "label": {
                   "en": "Reset",
-                  "nl": "Reset"
+                  "nl": "Reset",
+                  "de": "Reset"
                 }
               },{
                 "id": "stopwatch.start",
                 "label": {
                   "en": "Start",
-                  "nl": "Start"
+                  "nl": "Start",
+                  "de": "Start"
                 }
               }
             ]
@@ -476,7 +511,8 @@
       { "id": "timerAction",
         "title": {
           "en": "Timer",
-          "nl": "Timer"
+          "nl": "Timer",
+          "de": "Timer"
         },
         "args": [
           {
@@ -491,19 +527,22 @@
                 "id": "countdown.pause",
                 "label": {
                   "en": "Pause",
-                  "nl": "Pauzeer"
+                  "nl": "Pauzeer",
+                  "de": "Pause"
                 }
               },{
                 "id": "countdown.reset",
                 "label": {
                   "en": "Reset",
-                  "nl": "Reset"
+                  "nl": "Reset",
+                  "de": "Reset"
                 }
               },{
                 "id": "countdown.start",
                 "label": {
                   "en": "Start",
-                  "nl": "Start"
+                  "nl": "Start",
+                  "de": "Start"
                 }
               }
             ]
@@ -513,7 +552,8 @@
       { "id": "timerConfig",
         "title": {
           "en": "Timer configuration",
-          "nl": "Timer instellen"
+          "nl": "Timer instellen",
+          "de": "Timer einstellen"
         },
         "args": [
           {
@@ -527,7 +567,8 @@
             "max": 100000,
             "placeholder": {
               "en": "seconds",
-              "nl": "seconden"
+              "nl": "seconden",
+              "de": "Sekunden"
             }
           },{
             "name": "start",
@@ -537,13 +578,15 @@
                 "id": "true",
                 "label": {
                   "en": "Start now",
-                  "nl": "Direct starten"
+                  "nl": "Direct starten",
+                  "de": "Direkt starten"
                 }
               },{
                 "id": "false",
                 "label": {
                   "en": "Only set timer",
-                  "nl": "Alleen timer instellen"
+                  "nl": "Alleen timer instellen",
+                  "de": "Nur Timer einstellen"
                 }
               }
             ]
@@ -553,7 +596,8 @@
       { "id": "weatherAction",
         "title": {
           "en": "Weather",
-          "nl": "Weer"
+          "nl": "Weer",
+          "de": "Wetter"
         },
         "args": [
           {
@@ -568,7 +612,8 @@
                 "id": "weather.forecast",
                 "label": {
                   "en": "Forecast",
-                  "nl": "Verwachting"
+                  "nl": "Verwachting",
+                  "de": "Vorhersage"
                 }
               }
             ]
